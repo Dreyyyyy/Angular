@@ -1,0 +1,10 @@
+<h2>List rendering</h2>
+<ul class="product-list">
+  <li *ngFor="let smartphone of smartphones">
+    <strong>{{ smartphone.name }}</strong>
+    <p>{{ smartphone.description }}</p>
+    <span [ngClass]="smartphone.soldOut ? 'soldOut' : ''">{{
+      smartphone.soldOut ? "Sold out!" : "Avaliable"
+    }}</span>
+  </li>
+</ul>

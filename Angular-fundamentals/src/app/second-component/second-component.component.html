@@ -1,0 +1,5 @@
+<h2>Deepening knowledge in templates</h2>
+<img [src]="urlImage" width="300" />
+<p>Name: {{ name | uppercase }}</p>
+<p>Birth date: {{ birthDate | date : "dd/MM/yyyy" }}</p>
+<button (click)="showBirthDate()" type="button">Show birthdate</button>
