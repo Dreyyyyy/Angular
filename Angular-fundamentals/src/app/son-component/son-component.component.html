@@ -1,0 +1,6 @@
+<h3>The last name come from father element: {{ lastName }}</h3>
+<label for="name">Type the name: </label>
+<input type="text" id="name" [(ngModel)]="name" />
+<button type="button" (click)="showName.emit(name + ' ' + lastName)">
+  Show full name
+</button>

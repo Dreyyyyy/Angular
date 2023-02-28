@@ -11,6 +11,10 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
 import { FormsModule } from '@angular/forms';
 import { ListRenderingComponent } from './list-rendering/list-rendering.component';
 import { PersonalizedComponentComponent } from './personalized-component/personalized-component.component';
+import { FatherComponentComponent } from './father-component/father-component.component';
+import { SonComponentComponent } from './son-component/son-component.component';
+import { Service1ExampleComponent } from './service1-example/service1-example.component';
+import { Service2ExampleComponent } from './service2-example/service2-example.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { PersonalizedComponentComponent } from './personalized-component/persona
     CustomizedPipeComponent,
     TwoWayDataBindingComponent,
     ListRenderingComponent,
-    PersonalizedComponentComponent
+    PersonalizedComponentComponent,
+    FatherComponentComponent,
+    SonComponentComponent,
+    Service1ExampleComponent,
+    Service2ExampleComponent
   ],
   imports: [
     BrowserModule,

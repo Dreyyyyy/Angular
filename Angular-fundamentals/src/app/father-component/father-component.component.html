@@ -1,0 +1,8 @@
+<h2>Interaction between components</h2>
+<h3>The last name is defined on the father element: {{ lastName }}</h3>
+<h3>Full name: {{ son.name }} {{ lastName }}</h3>
+<app-son-component
+  [lastName]="lastName"
+  (showName)="showFullName($event)"
+  #son
+></app-son-component>
