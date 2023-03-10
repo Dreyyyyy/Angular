@@ -6,15 +6,17 @@
   <div class="container-menu">
     <nav class="main-header__menu">
       <ul>
-        <li><a>Products</a></li>
+        <li><a routerLink="/products">Products</a></li>
         <li>
-          <a>
+          <a routerLink="/cart">
             <i class="fa-solid fa-cart-shopping"></i>
             Cart
-            <span class="badge-carrinho">0</span>
+            <span class="badge-carrinho">{{
+              cartService.getCart().length
+            }}</span>
           </a>
         </li>
-        <li><a>Contact</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
         <li>
           <a><i class="fa-brands fa-facebook-f"></i></a>
         </li>
