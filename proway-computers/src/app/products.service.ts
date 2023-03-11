@@ -9,11 +9,12 @@ export class ProductsService {
   constructor() { }
 
   getAll() {
+    console.log(this.products);
     return this.products;
   }
   
   getOne(productId: number) {
-    console.log(this.products.find(product => product.id = productId));
-    return this.products.find(product => product.id = productId);
+    //console.log(this.products.find(product => product.id = productId));
+    return this.products.find(product => product.id == productId);
   }
 }
