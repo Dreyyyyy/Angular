@@ -13,6 +13,7 @@ export class ProductsService {
   }
   
   getOne(productId: number) {
+    console.log(this.products.find(product => product.id = productId));
     return this.products.find(product => product.id = productId);
   }
 }
